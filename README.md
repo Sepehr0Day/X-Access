@@ -1,2 +1,70 @@
 # X-Access
-Communication with the server using server and client
+
+X-Access is a Python package designed to facilitate remote server management and interaction. It consists of a client-side module for executing commands and managing files on a remote server and a server-side module for handling these commands and providing server information.
+
+## Installation
+
+You can install the client-side module via pip:
+
+```
+pip install X_Access
+```
+
+For the server-side module, you can clone the repository from GitHub:
+
+```
+git clone https://github.com/Sepehr0Day/X-Access.git
+```
+
+## Usage
+
+### Server-side Usage
+
+The server module runs on the server side to handle incoming requests and execute commands. Here's how you can set it up:
+
+```bash
+git clone https://github.com/Sepehr0Day/X-Access.git
+cd X-Access
+python3 install.py
+screen python3 API.py | If run this command, after close window remote server process not kill
+```
+
+### Client-side Usage
+
+The client module allows you to interact with remote servers. Here's how you can use it:
+
+```python
+from X_Access.Server import Server
+from X_Access.Actions import Actions
+
+# Initialize server object with IP, port, and authorization code
+
+actions = Actions(server=Server(
+    "X Session Name",
+    ip="",
+    port="",
+    authorization="",
+))
+# Get server information
+server_info = actions.server.get_info_server()
+print(server_info)
+
+```
+
+## Next Update
+- Add Panel Interface On Web
+- Add Support For Windows Server (Just Web Panel)
+  
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Sepehr0Day/X-Access/blob/main/LICENSE) file for details.
+
+## Developer
+
+- **Developer**: Sepehr0Day
+- **GitHub**: [github.com/Sepehr0Day](https://github.com/Sepehr0Day)
+- **Telegram**: [t.me/Sepehr0Day](https://t.me/Sepehr0Day)
+
+---
+
+Feel free to contribute to the project or report any issues on the GitHub repository!
