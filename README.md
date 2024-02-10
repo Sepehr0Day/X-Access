@@ -1,6 +1,6 @@
-# X-Access
+# XAccess
 
-X-Access is a Python package designed to facilitate remote server management and interaction. It consists of a client-side module for executing commands and managing files on a remote server and a server-side module for handling these commands and providing server information.
+XAccess is a Python package designed to facilitate remote server management and interaction. It consists of a client-side module for executing commands and managing files on a remote server and a server-side module for handling these commands and providing server information.
 
 ## Installation
 
@@ -13,7 +13,7 @@ pip install X_Access
 For the server-side module, you can clone the repository from GitHub:
 
 ```
-git clone https://github.com/Sepehr0Day/X-Access.git
+git clone https://github.com/Sepehr0Day/XAccess.git
 ```
 
 ## Usage
@@ -23,8 +23,8 @@ git clone https://github.com/Sepehr0Day/X-Access.git
 The server module runs on the server side to handle incoming requests and execute commands. Here's how you can set it up:
 
 ```bash
-git clone https://github.com/Sepehr0Day/X-Access.git
-cd X-Access
+git clone https://github.com/Sepehr0Day/XAccess.git
+cd XAccess
 python3 install.py
 screen python3 API.py | If run this command, after close window remote server process not kill
 ```
@@ -34,8 +34,8 @@ screen python3 API.py | If run this command, after close window remote server pr
 The client module allows you to interact with remote servers. Here's how you can use it:
 
 ```python
-from X_Access.Server import Server
-from X_Access.Actions import Actions
+from XAccess.Server import Server
+from XAccess.Actions import Actions
 
 # Initialize server object with IP, port, and authorization code
 
@@ -57,7 +57,7 @@ print(server_info)
   
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Sepehr0Day/X-Access/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Sepehr0Day/XAccess/blob/main/LICENSE) file for details.
 
 ## Developer
 
