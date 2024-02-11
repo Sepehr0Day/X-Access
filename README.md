@@ -7,7 +7,7 @@ XAccess is a Python package designed to facilitate remote server management and 
 You can install the client-side module via pip:
 
 ```
-pip install X_Access
+pip install XAccess
 ```
 
 For the server-side module, you can clone the repository from GitHub:
@@ -38,13 +38,13 @@ from XAccess.Server import Server
 from XAccess.Actions import Actions
 
 # Initialize server object with IP, port, and authorization code
-
 actions = Actions(server=Server(
     "X Session Name",
     ip="",
     port="",
     authorization="",
 ))
+
 # Get server information
 server_info = actions.server.get_info_server()
 print(server_info)
@@ -59,10 +59,9 @@ print(server_info)
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Sepehr0Day/XAccess/blob/main/LICENSE) file for details.
 
-## Developer
+<a href="https://pypi.org/project/DbUnify/"><img src="https://img.shields.io/badge/XAccess-1.0-blue"></a> 
 
-- **Developer**: Sepehr0Day
-- **GitHub**: [github.com/Sepehr0Day](https://github.com/Sepehr0Day)
+## Developer
 - **Telegram**: [t.me/Sepehr0Day](https://t.me/Sepehr0Day)
 
 ---
