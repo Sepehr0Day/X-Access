@@ -1,0 +1,1 @@
+def valid(address):return True if address else False
